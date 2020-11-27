@@ -3,4 +3,4 @@
 ## Programming
 The programming is done via USBtTTL module. The wiring is shown in the picture. The only exception is that 5V is used for everything (not 3.3 like the picture suggests)
 
-![alt text](https://github.com/DmitryLapshov/esp32cam_sim800Lv2_proof_of_concept/blob/main/esp32cam01.png)
+![alt text](https://github.com/DmitryLapshov/esp32cam_sim800Lv2_proof_of_concept/blob/main/esp32cam02.png)
