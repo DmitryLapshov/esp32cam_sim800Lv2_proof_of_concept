@@ -11,8 +11,8 @@ On the other hand as soon as HardwareSerial is activated the camera fails to ini
 
 As a workaround it is possible to use them sequentually, one after another. The proposed algorithm is this:
 
-Start -> If a photo is needed -> Initialise Camera and SD card -> Take photo -> Store the photo on SD card -> Initialise HardwareSerial -> Send the photo via GPRS -> Either used GSM again or RESTART.
+Start -> If Camera/SDCard is needed -> Initialise Camera and SD card -> Take photo -> Store the photo on SD card -> Initialise HardwareSerial -> Send the photo via GPRS -> Either used GSM again or RESTART.
 
-Start -> If GPRS is needed -> Initialise HardwareSerial -> Use GSM modem -> Either used GSM again or RESTART.
+Start -> If GSM modem is needed -> Initialise HardwareSerial -> Use GSM modem -> Either used GSM again or RESTART.
 
 So the work with esp32cam is being done in "cycles". That way it becomes possible to control the esp32cam's behaviour by an external controller. It may be a computer connected via USB to TTL connecter or Arduino board sending "commands" to esp32cam via its additional SoftwareSerial interface.
